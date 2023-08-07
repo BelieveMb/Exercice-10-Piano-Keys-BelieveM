@@ -1,0 +1,88 @@
+Vous êtes un développeur web embauché par une entreprise d'éducation musicale.
+Ce client souhaite que vous créiez un jeu interactif pour aider les étudiants
+débutants en piano à étudier.
+Créez un lecteur de piano avec des événements DOM en JavaScript!
+
+Tâches
+
+Créer un jeu de piano interactif
+Au début du code, nous avons des affectations de noms de variables pour le tableau de touches et le tableau de notes. Il y a également une fonction qui boucle à travers les éléments du tableau de touches et les pousse dans le tableau de notes.
+Après le deuxième commentaire, créez une fonction nommée keyPlay qui change la couleur de fond des touches lorsqu'elles sont enfoncées.
+Assurez-vous d'utiliser la propriété .target dans la fonction car la cible est modifiée dans ce cas.
+
+Ensuite, créez une fonction nommée keyReturn qui renvoie la couleur de fond des touches à leur valeur par défaut avec une chaîne vide lorsque la souris est relâchée sur l'élément. Assurez-vous d'utiliser la propriété .target.
+
+Maintenant que vous avez créé deux fonctions qui changent la couleur des éléments de clé, vous devez les assigner en tant que valeurs des propriétés de gestionnaire d'événements.
+Créez une fonction nommée et laissez le bloc de code vide pour l'instant. Cette fonction sera utilisée plus tard pour attribuer des événements aux touches, elle doit donc prendre un paramètre - vous pouvez l'appeler note.
+
+À l'intérieur de la fonction, créez un gestionnaire d'événements qui exécute keyPlay en tant que gestionnaire d'événements lorsqu'un événement mousedown est déclenché sur n'importe quelle note.
+
+À l'intérieur de la fonction, créez une deuxième propriété de gestionnaire d'événements qui exécute keyReturn lorsqu'un événement mouseup est déclenché sur n'importe quelle note.
+
+Au début du code, nous avons des affectations de noms de variables pour le tableau de touches et le tableau de notes vides. Il y a également une fonction qui boucle à travers le tableau de touches et pousse les éléments de touches dans le tableau de notes pour leur attribuer un nom de variable.
+Maintenant, vous devez créer une boucle .forEach qui fera passer les éléments du tableau notes à travers votre fonction d'attribution d'événements.
+
+Maintenant, le programme sait quoi faire lorsque chaque touche de piano a un événement mousedown ou mouseup déclenché dessus. Exécutez votre code et voyez comment cela fonctionne!
+
+Ensuite, il y a des variables qui représentent les boutons de progression dans la boîte à chansons ci-dessous qui permettent aux étudiants de progresser au piano.
+Les nextOne, nextTwo, nextThree et startOver changent les paroles et les notes de musique de la chanson pour aider l'élève à jouer. Au début de la chanson, le seul bouton dont l'étudiant a besoin est nextOne. En raison de cela, les propriétés .hidden des autres boutons sont affectées à la valeur true.
+Maintenant, vous devez créer des événements sur tous les boutons de progression. Tout d'abord, créez une propriété de gestionnaire d'événements avec un événement click sur l'élément nextOne.
+
+Pour commencer à modifier la boîte à chansons, vous devez d'abord changer les boutons de progression.
+À l'aide d'une fonction anonyme de gestionnaire d'événements, effectuez les modifications suivantes sur le bouton qui apparaît après que nextOne est cliqué:
+
+Révélez le bouton nextTwo en changeant la propriété .hidden pour faire apparaître le bouton nextTwo.
+Masquez le bouton nextOne en changeant la propriété .hidden pour masquer le bouton nextOne.
+Ensuite, un événement click déclenché sur nextOne doit changer les notes de musique qui guident l'étudiant au piano.
+Ajoutez les modifications suivantes à la fonction nextOne pour que les notes musicales changent lorsque le bouton est cliqué.
+
+Changez le contenu de l'élément avec un ID de letter-note-five en D.
+Changez le contenu de l'élément avec un ID de letter-note-six en C.
+Créez une autre propriété de gestionnaire d'événements avec un événement click sur l'élément button appelé nextTwo. Ensuite, attribuez la propriété à la valeur d'une fonction anonyme de gestionnaire d'événements.
+
+Effectuez les modifications suivantes sur le bouton qui apparaît lorsque nextTwo est cliqué:
+
+Révélez le bouton nextThree en changeant la propriété .hidden pour faire apparaître le bouton nextThree.
+Masquez le bouton nextTwo en changeant la propriété .hidden pour masquer le bouton nextTwo.
+Une fois que l'étudiant a atteint ce point de la chanson Joyeux Anniversaire, les paroles passent de HAP-PY BIRTH-DAY TO YOU à HAP-PY BIRTH-DAY DEAR FRI-END.
+Effectuez les modifications suivantes sur les paroles dans la fonction lorsque le bouton est cliqué:
+
+Changez le contenu de l'élément avec un ID de word-five en DEAR.
+Changez le contenu de l'élément avec un ID de word-six en FRI-.
+Maintenant, vous avez les paroles HAP-PY BIRTH-DAY DEAR FRI-. Pour terminer la ligne, vous devez ajouter -END à la boîte à chansons sous le piano.
+L'élément -END est stocké dans la variable lastLyric.
+Ajoutez une instruction à la fonction du gestionnaire d'événements pour nextTwo qui modifie la propriété d'affichage de lastLyric en 'inline-block'.
+
+Un événement click déclenché sur le deuxième bouton doit également changer les notes de musique pour guider l'étudiant au piano.
+Ajoutez les modifications suivantes à la fonction nextTwo pour que les notes musicales changent lorsque le bouton est cliqué.
+
+Changez le contenu de l'élément avec un ID de letter-note-three en G.
+Changez le contenu de l'élément avec un ID de letter-note-four en E.
+Changez le contenu de l'élément avec un ID de letter-note-five en C.
+Changez le contenu de l'élément avec un ID de letter-note-six en B.
+Créez une propriété de gestionnaire d'événements avec un événement click sur l'élément nextThree.
+
+À l'aide d'une fonction anonyme de gestionnaire d'événements, effectuez les modifications suivantes sur le bouton qui apparaît lorsque nextThree est cliqué:
+
+Révélez le bouton startOver en changeant la propriété .hidden pour faire apparaître le bouton startOver.
+Masquez le bouton nextThree en changeant la propriété .hidden pour masquer le bouton nextThree.
+Ajoutez les modifications suivantes à la fonction nextThree pour que les paroles changent lorsque ce bouton est cliqué.
+
+Changez le contenu de l'élément avec un ID de word-one en HAP-.
+Changez le contenu de l'élément avec un ID de word-two en PY.
+Changez le contenu de l'élément avec un ID de word-three en BIRTH.
+Changez le contenu de l'élément avec un ID de word-four en DAY
+Changez le contenu de l'élément avec un ID de word-five en TO.
+Changez le contenu de l'élément avec un ID de word-six en YOU!.
+Ajoutez les modifications suivantes à la fonction nextThree pour que les notes musicales changent lorsque le bouton est cliqué.
+
+Changez le contenu de l'élément avec un ID de letter-note-one en F.
+Changez le contenu de l'élément avec un ID de letter-note-two en F.
+Changez le contenu de l'élément avec un ID de letter-note-three en E.
+Changez le contenu de l'élément avec un ID de letter-note-four en C.
+Changez le contenu de l'élément avec un ID de letter-note-five en D.
+Changez le contenu de l'élément avec un ID de letter-note-six en C.
+Maintenant vous avez les paroles HAP-PY BIRTH-DAY TO YOU! -END - cela ne pouvait pas être juste! Pour terminer la ligne, vous devez vous débarrasser du "-end" dans la boîte à chansons.
+Ajoutez une instruction à la fonction du gestionnaire d'événements pour nextThree qui modifie la propriété d'affichage lastLyric en 'none'.
+
+Félicitations, vous avez terminé le Piano Player! Jouez avec le piano et la boîte à chansons pour déclencher tous les événements.
