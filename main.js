@@ -6,8 +6,8 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
-
-
+//start projet
+//first commit
 // Write a named function with event handler properties
 
 
