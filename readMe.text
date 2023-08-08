@@ -6,11 +6,18 @@ Créez un lecteur de piano avec des événements DOM en JavaScript!
 Tâches
 
 Créer un jeu de piano interactif
-Au début du code, nous avons des affectations de noms de variables pour le tableau de touches et le tableau de notes. Il y a également une fonction qui boucle à travers les éléments du tableau de touches et les pousse dans le tableau de notes.
-Après le deuxième commentaire, créez une fonction nommée keyPlay qui change la couleur de fond des touches lorsqu'elles sont enfoncées.
-Assurez-vous d'utiliser la propriété .target dans la fonction car la cible est modifiée dans ce cas.
+Au début du code, nous avons des affectations de noms de variables pour le
+tableau de touches et le tableau de notes.
+Il y a également une fonction qui boucle à travers les éléments du tableau
+de touches et les pousse dans le tableau de notes.
+#Après le deuxième commentaire, créez une fonction nommée keyPlay qui change
+la couleur de fond des touches lorsqu'elles sont enfoncées.
+#Assurez-vous d'utiliser la propriété .target dans la fonction car la cible
+ est modifiée dans ce cas.
 
-Ensuite, créez une fonction nommée keyReturn qui renvoie la couleur de fond des touches à leur valeur par défaut avec une chaîne vide lorsque la souris est relâchée sur l'élément. Assurez-vous d'utiliser la propriété .target.
+Ensuite, créez une fonction nommée keyReturn qui renvoie la couleur de fond 
+des touches à leur valeur par défaut avec une chaîne vide lorsque la souris 
+est relâchée sur l'élément. Assurez-vous d'utiliser la propriété .target.
 
 Maintenant que vous avez créé deux fonctions qui changent la couleur des éléments de clé, vous devez les assigner en tant que valeurs des propriétés de gestionnaire d'événements.
 Créez une fonction nommée et laissez le bloc de code vide pour l'instant. Cette fonction sera utilisée plus tard pour attribuer des événements aux touches, elle doit donc prendre un paramètre - vous pouvez l'appeler note.
